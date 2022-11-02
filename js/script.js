@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
         newFilm = `${newFilm.substring(0, 22)}...`;
       }
 
-      if(favorite){
-        console.log('fdfdf');
+      if (favorite) {
+        console.log("fdfdf");
       }
 
       movieDB.movies.push(newFilm);
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelectorAll(".delete").forEach((btn, i) => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener("click", () => {
         btn.parentElement.remove();
         movieDB.movies.splice(i, 1);
 
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-  
+
   makeChanges();
   deleteAdv(promoAdv);
   createMovieList(movieDB.movies, movieList);
